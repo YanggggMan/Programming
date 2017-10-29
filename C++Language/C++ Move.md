@@ -1,4 +1,4 @@
-##### 问题：如何写一个安全的函数支持**foo\( type\(\)\)**调用？
+##### 问题：如何声明函数让**foo(Type())**酱紫调用安全？
 
 * 不安全的用法：
 
@@ -29,7 +29,8 @@
   //oher vertion
   Type* foo(Type& son);//without const 
 
-  foo(Type());		//in msvc is ok, in GCC will occur compile error:an 					 // rvalue cant bind to a lvalue
+  foo(Type());		//in msvc is ok, in GCC will occur compile error:an
+  				   // rvalue cant bind to a lvalue
   ~~~
 
 
