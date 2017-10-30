@@ -41,29 +41,27 @@
 
       * 推荐方法2：为两个概念显式创建文档
 
-
         ~~~c++
-        TEST_F(···){
-          ASSERT_THAT(object.size(), Eq(0u));
-          
-          ASSERT_THAT(object.isEmpty());
-        }
-        TEST_F(```){
-          object.add(xx);
-          ASSERT_THAT(object.size(), Gt(0u));
-          
-          ASSERT_THAT(object.isEmpty());
-        }
+            TEST_F(···){
+              ASSERT_THAT(object.size(), Eq(0u));
+
+              ASSERT_THAT(object.isEmpty());
+            }
+            TEST_F(```){
+              object.add(xx);
+              ASSERT_THAT(object.size(), Gt(0u));
+
+              ASSERT_THAT(object.isEmpty());
+            }
         ~~~
 
-        ​
 
    3. 3a  Arrange-Act-Assert/Given-When-Then
 
 4. GoogleTest的使用
 
    * TEST宏
-   * Fixture[^1]
+   * Fixture[1](# "fixture的加入以整理测试代码，而当你需要2个不同的fixture时，可能意味着违反了单一责任原则，需要拆分")
      * setup
    * MATCHER_P宏
    * ​
@@ -98,10 +96,3 @@
      > * 如果传入一个空的object会怎样？
      > * 如果object不在有效？
 
-
-
-
-
-
-
-[^1]: fixture的加入以整理测试代码，而当你需要2个不同的fixture时，可能意味着违反了单一责任原则，需要拆分
