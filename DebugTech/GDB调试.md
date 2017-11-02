@@ -18,6 +18,8 @@
 
    s							//进入函数
 
+   p							//print命令，可加入  %d  %x等控制输出格式，数组后加入@length来打印数组
+
 2. 附加进程调试
 
    gdb		ProgramName		pid		//可先通过ps命令获得该进程的id
