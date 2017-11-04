@@ -62,3 +62,11 @@ operator delete(void* ptr) _NOEXCEPT
 
 
 回到原问题，会内存泄露吗？我们看delete的时候发现它是基于free的，也就是这个问题转移到了malloc/free会不会分辨类型。
+
+那么free释放内存需要知道指针p的确切大小吗？
+
+答案是不需要。因为这个属于系统memory management范畴，你只需要给到free(void* p)正确的地址即可，地址长度已经在在里面记录了下来，传递的时候是不需要的。
+
+或者也可以更深一步研究：free的空间一定被os回收了吗？
+
+如果一个管理几G的系统整体分配回收几byte的内存会非常低效。这时就应该有碎片的管理，都是属于memory  management方面的内容，交由系统管理~
