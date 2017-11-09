@@ -5,7 +5,11 @@
 1. 安装GoogleTest
 
    1. cmake与makefile
+
+      cmake是一种更简单地生成makefile的工具，而且是跨平台的
+
    2. lib与头文件
+
    3. vs的GoogleTest插件
 
 2. TDD基本方法
@@ -55,18 +59,19 @@
             }
         ~~~
 
+      4. 3a  Arrange-Act-Assert/Given-When-Then：表现出测试即文档的分块行为
 
-   3. 3a  Arrange-Act-Assert/Given-When-Then
+      5. eq比gt这些范围的解释性要强
 
-4. GoogleTest的使用
+3. GoogleTest的使用
 
    * TEST宏
    * Fixture[1](# "fixture的加入以整理测试代码，而当你需要2个不同的fixture时，可能意味着违反了单一责任原则，需要拆分")
-     * setup
-   * MATCHER_P宏
-   * ​
+     * setup和teardown：两者每次测试的开始和结束都会分别调用，就像概念上的init()和delete()一样
+   * MATCHER_P宏：
+   * DISABLE_前缀：禁用某些测试
 
-5. 重构策略
+4. 重构策略
 
    * 单一责任原则
 
@@ -79,8 +84,14 @@
        > }
        > ~~~
        >
-       > ​
 
+   * 对象的周期性构造：
+
+     * constructor:用来显式初始化必要的依赖
+     * init():用来初始化配置形式的成员
+     * reset():对象周期性使用的话，一些状态(state)的重置
+
+   * 抽取处工具类、工具方法：高度可重用的操作
 
 5. Other Tools
 
@@ -95,4 +106,3 @@
      > * 如果加入一个之前已经加入的object会怎样？
      > * 如果传入一个空的object会怎样？
      > * 如果object不在有效？
-
