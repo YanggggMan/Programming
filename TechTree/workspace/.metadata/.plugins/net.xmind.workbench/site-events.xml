@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site-events>
+<events>
+<event action-text="升级" id="cloud_shutdown_xmind7" open-external="true" prompt="once" style="popup" url="https://www.xmind.cn/download/?ref=popup_clouddown">XMind Cloud 服务已于2018年1月31日正式关停，请更新到最新版本</event>
+</events>
+</site-events>
