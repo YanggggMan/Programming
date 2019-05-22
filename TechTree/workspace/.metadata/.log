@@ -1,0 +1,391 @@
+!SESSION 2018-07-09 23:57:41.437 -----------------------------------------------
+eclipse.buildId=R3.7.4.201709062120
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -eclipse.keyring @user.home/Application Data/XMind/secure_storage E:\learning\Programming\TechTree\Computer Architecture.xmind
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data ./workspace -eclipse.keyring @user.home/Application Data/XMind/secure_storage E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:57:45.969
+!MESSAGE Skip unrecognized command line argument: '-eclipse.keyring'
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:57:45.969
+!MESSAGE Skip unrecognized command line argument: '@user.home/Application Data/XMind/secure_storage'
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:57:47.172
+!MESSAGE Path queued to be opened: E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:57:48.399
+!MESSAGE Ready to open files: [E:\learning\Programming\TechTree\Computer Architecture.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2018-07-09 23:57:48.414
+!MESSAGE Malformed URI: E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY net.xmind.workbench 4 0 2018-07-09 23:57:49.571
+!MESSAGE Failed to retrieve site events: 3
+!STACK 0
+java.net.UnknownHostException: www.xmind.cn
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1890)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1885)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1884)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1457)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.xmind.core.net.internal.XMindNetRequest.send(XMindNetRequest.java:1009)
+	at org.xmind.core.net.internal.XMindNetRequest.executeInDaemonThread(XMindNetRequest.java:896)
+	at org.xmind.core.net.internal.XMindNetRequest.access$0(XMindNetRequest.java:889)
+	at org.xmind.core.net.internal.XMindNetRequest$1.run(XMindNetRequest.java:870)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.UnknownHostException: www.xmind.cn
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1513)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.xmind.core.net.internal.XMindNetRequest.send(XMindNetRequest.java:982)
+	... 4 more
+
+!ENTRY org.xmind.core.command.remote.lan 2 23333 2018-07-09 23:57:50.102
+!MESSAGE Bonjour installation is not found or damaged.
+!STACK 0
+java.lang.UnsatisfiedLinkError: no jdns_sd in java.library.path
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1867)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at com.apple.dnssd.AppleDNSSD.<clinit>(DNSSD.java:544)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.apple.dnssd.DNSSD.<clinit>(DNSSD.java:477)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.xmind.core.internal.command.remote.lan.LANDiscoveryServiceAdapter.<init>(LANDiscoveryServiceAdapter.java:43)
+	at org.xmind.core.internal.command.remote.lan.LANDiscoveryServiceFactory.createDomainService(LANDiscoveryServiceFactory.java:39)
+	at org.xmind.core.internal.command.remote.CommandServiceDomainImpl.createDomainService(CommandServiceDomainImpl.java:71)
+	at org.xmind.core.internal.command.remote.CommandServiceDomainImpl.getRemoteCommandServiceDiscoverer(CommandServiceDomainImpl.java:135)
+	at org.xmind.core.internal.sharing.LocalNetworkSharingService.activate(LocalNetworkSharingService.java:357)
+	at org.xmind.ui.internal.sharing.ToggleSharingServiceStatusJob.activate(ToggleSharingServiceStatusJob.java:78)
+	at org.xmind.ui.internal.sharing.ToggleSharingServiceStatusJob.run(ToggleSharingServiceStatusJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:58:08.271
+!MESSAGE Path queued to be opened: E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:58:08.271
+!MESSAGE Ready to open files: [E:\learning\Programming\TechTree\Computer Architecture.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2018-07-09 23:58:08.287
+!MESSAGE Malformed URI: E:\learning\Programming\TechTree\Computer Architecture.xmind
+!SESSION 2018-07-09 23:58:11.977 -----------------------------------------------
+eclipse.buildId=R3.7.4.201709062120
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -eclipse.keyring @user.home/Application Data/XMind/secure_storage E:\learning\Programming\TechTree\Computer Architecture.xmind
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data ./workspace -eclipse.keyring @user.home/Application Data/XMind/secure_storage E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:58:13.430
+!MESSAGE Skip unrecognized command line argument: '-eclipse.keyring'
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:58:13.430
+!MESSAGE Skip unrecognized command line argument: '@user.home/Application Data/XMind/secure_storage'
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:58:14.680
+!MESSAGE Path queued to be opened: E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:58:15.860
+!MESSAGE Ready to open files: [E:\learning\Programming\TechTree\Computer Architecture.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2018-07-09 23:58:15.875
+!MESSAGE Malformed URI: E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY net.xmind.workbench 4 0 2018-07-09 23:58:17.016
+!MESSAGE Failed to retrieve site events: 3
+!STACK 0
+java.net.UnknownHostException: www.xmind.cn
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1890)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1885)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1884)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1457)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.xmind.core.net.internal.XMindNetRequest.send(XMindNetRequest.java:1009)
+	at org.xmind.core.net.internal.XMindNetRequest.executeInDaemonThread(XMindNetRequest.java:896)
+	at org.xmind.core.net.internal.XMindNetRequest.access$0(XMindNetRequest.java:889)
+	at org.xmind.core.net.internal.XMindNetRequest$1.run(XMindNetRequest.java:870)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.UnknownHostException: www.xmind.cn
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1513)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.xmind.core.net.internal.XMindNetRequest.send(XMindNetRequest.java:982)
+	... 4 more
+
+!ENTRY org.xmind.ui.seawind 1 0 2018-07-09 23:58:17.047
+!MESSAGE WARNING: Library owner is null in info.json
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:58:31.996
+!MESSAGE Path queued to be opened: E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:58:31.996
+!MESSAGE Ready to open files: [E:\learning\Programming\TechTree\Computer Architecture.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2018-07-09 23:58:31.996
+!MESSAGE Malformed URI: E:\learning\Programming\TechTree\Computer Architecture.xmind
+!SESSION 2018-07-09 23:58:58.012 -----------------------------------------------
+eclipse.buildId=R3.7.4.201709062120
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -eclipse.keyring @user.home/Application Data/XMind/secure_storage E:\learning\Programming\TechTree\C++.xmind
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data ./workspace -eclipse.keyring @user.home/Application Data/XMind/secure_storage E:\learning\Programming\TechTree\C++.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:58:59.480
+!MESSAGE Skip unrecognized command line argument: '-eclipse.keyring'
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:58:59.480
+!MESSAGE Skip unrecognized command line argument: '@user.home/Application Data/XMind/secure_storage'
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:59:00.746
+!MESSAGE Path queued to be opened: E:\learning\Programming\TechTree\C++.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:59:01.922
+!MESSAGE Ready to open files: [E:\learning\Programming\TechTree\C++.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2018-07-09 23:59:01.922
+!MESSAGE Malformed URI: E:\learning\Programming\TechTree\C++.xmind
+
+!ENTRY net.xmind.workbench 4 0 2018-07-09 23:59:03.234
+!MESSAGE Failed to retrieve site events: 3
+!STACK 0
+java.net.UnknownHostException: www.xmind.cn
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1890)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1885)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1884)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1457)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.xmind.core.net.internal.XMindNetRequest.send(XMindNetRequest.java:1009)
+	at org.xmind.core.net.internal.XMindNetRequest.executeInDaemonThread(XMindNetRequest.java:896)
+	at org.xmind.core.net.internal.XMindNetRequest.access$0(XMindNetRequest.java:889)
+	at org.xmind.core.net.internal.XMindNetRequest$1.run(XMindNetRequest.java:870)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.UnknownHostException: www.xmind.cn
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1513)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.xmind.core.net.internal.XMindNetRequest.send(XMindNetRequest.java:982)
+	... 4 more
+
+!ENTRY org.xmind.ui.seawind 1 0 2018-07-09 23:59:03.281
+!MESSAGE WARNING: Library owner is null in info.json
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:59:08.661
+!MESSAGE Path queued to be opened: E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:59:08.661
+!MESSAGE Ready to open files: [E:\learning\Programming\TechTree\Computer Architecture.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2018-07-09 23:59:08.661
+!MESSAGE Malformed URI: E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:59:14.807
+!MESSAGE Path queued to be opened: E:\learning\Programming\TechTree\Other Tech.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:59:14.807
+!MESSAGE Ready to open files: [E:\learning\Programming\TechTree\Other Tech.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2018-07-09 23:59:14.807
+!MESSAGE Malformed URI: E:\learning\Programming\TechTree\Other Tech.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:59:16.778
+!MESSAGE Path queued to be opened: E:\learning\Programming\TechTree\ECS.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:59:16.778
+!MESSAGE Ready to open files: [E:\learning\Programming\TechTree\ECS.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2018-07-09 23:59:16.778
+!MESSAGE Malformed URI: E:\learning\Programming\TechTree\ECS.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:59:20.420
+!MESSAGE Path queued to be opened: E:\learning\Programming\TechTree\Virtual Machine.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-09 23:59:20.420
+!MESSAGE Ready to open files: [E:\learning\Programming\TechTree\Virtual Machine.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2018-07-09 23:59:20.420
+!MESSAGE Malformed URI: E:\learning\Programming\TechTree\Virtual Machine.xmind
+!SESSION 2018-07-10 00:00:13.835 -----------------------------------------------
+eclipse.buildId=R3.7.4.201709062120
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -eclipse.keyring @user.home/Application Data/XMind/secure_storage E:\learning\Programming\TechTree\Computer Architecture.xmind
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data ./workspace -eclipse.keyring @user.home/Application Data/XMind/secure_storage E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-10 00:00:15.304
+!MESSAGE Skip unrecognized command line argument: '-eclipse.keyring'
+
+!ENTRY org.xmind.cathy 1 0 2018-07-10 00:00:15.304
+!MESSAGE Skip unrecognized command line argument: '@user.home/Application Data/XMind/secure_storage'
+
+!ENTRY org.xmind.cathy 1 0 2018-07-10 00:00:16.570
+!MESSAGE Path queued to be opened: E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-10 00:00:17.738
+!MESSAGE Ready to open files: [E:\learning\Programming\TechTree\Computer Architecture.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2018-07-10 00:00:17.754
+!MESSAGE Malformed URI: E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY net.xmind.workbench 4 0 2018-07-10 00:00:18.910
+!MESSAGE Failed to retrieve site events: 3
+!STACK 0
+java.net.UnknownHostException: www.xmind.cn
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1890)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1885)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1884)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1457)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.xmind.core.net.internal.XMindNetRequest.send(XMindNetRequest.java:1009)
+	at org.xmind.core.net.internal.XMindNetRequest.executeInDaemonThread(XMindNetRequest.java:896)
+	at org.xmind.core.net.internal.XMindNetRequest.access$0(XMindNetRequest.java:889)
+	at org.xmind.core.net.internal.XMindNetRequest$1.run(XMindNetRequest.java:870)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.UnknownHostException: www.xmind.cn
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1513)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.xmind.core.net.internal.XMindNetRequest.send(XMindNetRequest.java:982)
+	... 4 more
+
+!ENTRY org.xmind.ui.seawind 1 0 2018-07-10 00:00:18.957
+!MESSAGE WARNING: Library owner is null in info.json
+!SESSION 2018-07-10 00:17:14.879 -----------------------------------------------
+eclipse.buildId=R3.7.4.201709062120
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -eclipse.keyring @user.home/Application Data/XMind/secure_storage E:\learning\Programming\TechTree\Computer Architecture.xmind
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data ./workspace -eclipse.keyring @user.home/Application Data/XMind/secure_storage E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-10 00:17:16.435
+!MESSAGE Skip unrecognized command line argument: '-eclipse.keyring'
+
+!ENTRY org.xmind.cathy 1 0 2018-07-10 00:17:16.435
+!MESSAGE Skip unrecognized command line argument: '@user.home/Application Data/XMind/secure_storage'
+
+!ENTRY org.xmind.cathy 1 0 2018-07-10 00:17:17.783
+!MESSAGE Path queued to be opened: E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.cathy 1 0 2018-07-10 00:17:19.109
+!MESSAGE Ready to open files: [E:\learning\Programming\TechTree\Computer Architecture.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2018-07-10 00:17:19.121
+!MESSAGE Malformed URI: E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.ui.seawind 1 0 2018-07-10 00:17:25.479
+!MESSAGE WARNING: Library owner is null in info.json
+!SESSION 2019-05-22 20:11:00.715 -----------------------------------------------
+eclipse.buildId=R3.7.4.201709062120
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -eclipse.keyring @user.home/Application Data/XMind/secure_storage E:\learning\Programming\TechTree\Computer Architecture.xmind
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data ./workspace -eclipse.keyring @user.home/Application Data/XMind/secure_storage E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.cathy 1 0 2019-05-22 20:11:02.267
+!MESSAGE Skip unrecognized command line argument: '-eclipse.keyring'
+
+!ENTRY org.xmind.cathy 1 0 2019-05-22 20:11:02.268
+!MESSAGE Skip unrecognized command line argument: '@user.home/Application Data/XMind/secure_storage'
+
+!ENTRY org.xmind.cathy 1 0 2019-05-22 20:11:03.593
+!MESSAGE Path queued to be opened: E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.cathy 1 0 2019-05-22 20:11:04.835
+!MESSAGE Ready to open files: [E:\learning\Programming\TechTree\Computer Architecture.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2019-05-22 20:11:04.842
+!MESSAGE Malformed URI: E:\learning\Programming\TechTree\Computer Architecture.xmind
+
+!ENTRY org.xmind.ui.seawind 1 0 2019-05-22 20:11:06.139
+!MESSAGE WARNING: Library owner is null in info.json
